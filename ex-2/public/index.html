@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calcular Preço de Venda</title>
+</head>
+<body>
+  <h1>Calcular Preço de Venda</h1>
+  <form action="/calcular" method="post">
+    <div>
+      <label for="precoUnitario">Preço Unitário:</label>
+      <input type="number" step="0.01" id="precoUnitario" name="precoUnitario" required>
+    </div>
+    <div>
+      <label for="quantidade">Quantidade:</label>
+      <input type="number" step="0.01" id="quantidade" name="quantidade" required>
+    </div>
+    <div>
+      <label for="desconto">Desconto:</label>
+      <input type="number" step="0.01" id="desconto" name="desconto" required>
+    </div>
+    <button type="submit">Calcular</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulação de Lançamento de Dado</title>
+</head>
+
+<body>
+    <h1>Resultados da Simulação de Lançamento de Dado</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Face do Dado</th>
+                <th>Quantidade de Vezes Sorteada</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for (let face in resultados) { %>
+                <tr>
+                    <td>
+                        <%= face %>
+                    </td>
+                    <td>
+                        <%= resultados[face] %>
+                    </td>
+                </tr>
+                <% } %>
+        </tbody>
+    </table>
+</body>
+
+</html>
